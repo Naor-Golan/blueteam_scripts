@@ -1,0 +1,9 @@
+Linux (run as root):
+
+sudo ./baseline_linux.sh             # saves to /var/tmp/baseline_YYYYmmdd_HHMMSS
+sudo ./track_net_linux.sh            # logs diffs to /var/tmp/nettrack/changes.log
+
+Windows (run PowerShell as Administrator):
+
+powershell -ExecutionPolicy Bypass -File .\baseline_windows.ps1   # saves to C:\Baselines\YYYYmmdd_HHMMSS
+powershell -ExecutionPolicy Bypass -File .\track_net_windows.ps1  # diffs netstat to C:\NetTrack\changes.log
